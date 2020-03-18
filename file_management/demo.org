@@ -1,27 +1,62 @@
 
-A brief demo file to test GIF performance on Github:
+* File Management
 
-First, we're adding date- and time-stamps to a set of files:
+This is a brief demo for the major parts of my [[http://karl-voit.at/managing-digital-photographs/][file management workflow]].
+
+First, we're adding date- and time-stamps to a set of files using
+[[https://github.com/novoid/date2name][date2name]]:
 
 [[file:date2name.gif]]
 
-We then add more information to the file names:
+We then add more information to the file names with [[https://github.com/novoid/appendfilename][appendfilename]]:
 
 [[file:appendfilename.gif]]
 
-Adding keywords or tags to file names:
+Adding keywords or tags to file names with the versatile [[https://github.com/novoid/filetags][filetags]]
+tool:
 
 [[file:filetags_tagging.gif]]
 
-You end up with a set of files. To retrieve specific files, you may use filter mechanism by tags:
+You end up with a set of files. To retrieve specific files, you may
+use filter mechanism by tags:
 
 [[file:filetags_tag_filter.gif]]
 
-A more elaborated feature for file retrieval based on tags are my TagTrees:
+A more elaborated feature for file retrieval based on tags are my
+[[https://github.com/novoid/filetags#tagtrees][TagTrees]]:
 
 [[file:filetags_TagTrees.gif]]
 
-If you find those tag filter or TagTrees handy, you will be happy about these features that allow you changing tags within those temporary views:
+If you find those tag filter or TagTrees handy, you will be happy
+about these features that allow you changing tags within those
+temporary views:
 
 [[file:filetags_TagTrees_tag_operations.gif]]
 
+You can get this setup using Python and pip very easily via my
+[[https://github.com/novoid/integratethis][integratethis]] package. Just copy and paste the following lines in a
+Windows command line environment that has the permission to install
+and setup tools:
+
+: pip install pypiwin32 integratethis filetags date2name appendfilename
+: integratethis date2name
+: integratethis time2name
+: integratethis appendfilename --confirm
+: integratethis filetags --confirm
+: integratethis filetags --parameter="--filter" --displayname "filetags filter"
+: integratethis filetags --parameter="--filter --recursive" --displayname "filetags filter recursive"
+: integratethis filetags --parameter="--tagtrees --recursive --tagtrees-handle-no-tag no-tags" --displayname "TagTrees recursive"
+: integratethis filetags --parameter="--tagtrees --tagtrees-depth 3" --displayname "TagTrees lvl3"
+
+Further information can be found in the README files of the tools:
+- [[https://github.com/novoid/date2name][date2name]]
+- [[https://github.com/novoid/appendfilename][appendfilename]]
+- [[https://github.com/novoid/filetags][filetags]]
+- [[https://github.com/novoid/integratethis][integratethis]] 
+
+If you like this and you want to automate even more, you might also like:
+- [[https://github.com/novoid/guess-filename.py][guessfilename]]
+- [[https://gist.github.com/novoid/c4a239abc4027ecfd14e9904da88e6a1][guess-target-folder.sh]]
+- [[https://github.com/novoid/move2archive][move2archive]]
+
+The whole workflow pipeline is explained [[https://karl-voit.at/managing-digital-photographs/][on this blog article]].
