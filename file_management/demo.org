@@ -22,6 +22,10 @@ use filter mechanism by tags:
 
 [[file:filetags_tag_filter.gif]]
 
+Please note that all Sent-to-filter and Sent-to-TagTree actions are
+independent from the file or file selection. They apply to the current
+folder of the chosen file.
+
 A more elaborated feature for file retrieval based on tags are my
 [[https://github.com/novoid/filetags#tagtrees][TagTrees]]:
 
@@ -41,6 +45,9 @@ Windows command line environment that has the permission to install
 and setup tools:
 
 : pip install pypiwin32 integratethis filetags date2name appendfilename
+
+Setting up the File Explorer "Sent to..."-integration:
+
 : integratethis date2name
 : integratethis time2name
 : integratethis appendfilename --confirm
@@ -54,7 +61,11 @@ and setup tools:
 
 For non-Windows users, the process is quite similar. However, you have
 to omit =pypiwin32= and =integratethis= since they are only needed on
-Windows systems. The integration into tools like =geeqie= or =Thunar=
+Windows systems. 
+
+: pip install filetags date2name appendfilename
+
+The integration into tools like =geeqie= or =Thunar=
 needs to be done manually as [[https://karl-voit.at/managing-digital-photographs/][described here]].
 
 * More
