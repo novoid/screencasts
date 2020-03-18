@@ -1,0 +1,3 @@
+This is just a hosting repository for various screencast material across my projects.
+
+The reason I follow this approach is to keep potentially large binary files out of my source code repositories.
