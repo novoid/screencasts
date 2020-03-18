@@ -33,6 +33,8 @@ temporary views:
 
 [[file:filetags_TagTrees_tag_operations.gif]]
 
+** Windows Setup
+
 You can get this setup using Python and pip very easily via my
 [[https://github.com/novoid/integratethis][integratethis]] package. Just copy and paste the following lines in a
 Windows command line environment that has the permission to install
@@ -47,6 +49,15 @@ and setup tools:
 : integratethis filetags --parameter="--filter --recursive" --displayname "filetags filter recursive"
 : integratethis filetags --parameter="--tagtrees --recursive --tagtrees-handle-no-tag no-tags" --displayname "TagTrees recursive"
 : integratethis filetags --parameter="--tagtrees --tagtrees-depth 3" --displayname "TagTrees lvl3"
+
+** Non-Windows Setup
+
+For non-Windows users, the process is quite similar. However, you have
+to omit =pypiwin32= and =integratethis= since they are only needed on
+Windows systems. The integration into tools like =geeqie= or =Thunar=
+needs to be done manually as [[https://karl-voit.at/managing-digital-photographs/][described here]].
+
+* More
 
 Further information can be found in the README files of the tools:
 - [[https://github.com/novoid/date2name][date2name]]
