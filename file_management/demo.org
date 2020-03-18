@@ -11,17 +11,17 @@ We then add more information to the file names:
 
 Adding keywords or tags to file names:
 
-file:filetags_tagging.gif
+[[file:filetags_tagging.gif]]
 
 You end up with a set of files. To retrieve specific files, you may use filter mechanism by tags:
 
-file:filetags_tag_filter.gif
+[[file:filetags_tag_filter.gif]]
 
 A more elaborated feature for file retrieval based on tags are my TagTrees:
 
-file:filetags_TagTrees.gif
+[[file:filetags_TagTrees.gif]]
 
 If you find those tag filter or TagTrees handy, you will be happy about these features that allow you changing tags within those temporary views:
 
-file:filetags_TagTrees_tag_operations.gif
+[[file:filetags_TagTrees_tag_operations.gif]]
 
