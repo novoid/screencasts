@@ -1,1 +1,3 @@
 The files in this directory demonstrates my file management method which is described in [[https://karl-voit.at/managing-digital-photographs/][this blog article]].
+
+You can load a demo [[file:demo.org][here]].
