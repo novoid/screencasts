@@ -1,4 +1,7 @@
 
+*Note:* if you /really/ want to learn about these things, please visit
+[[https://karl-voit.at/file-mgt-demo-intro/][this demo page]] which contains the whole story.
+
 * File Management
 
 This is a brief demo for the major parts of my [[http://karl-voit.at/managing-digital-photographs/][file management workflow]].
