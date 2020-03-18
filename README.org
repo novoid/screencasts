@@ -1,3 +1,5 @@
 This is just a hosting repository for various screencast material across my projects.
 
 The reason I follow this approach is to keep potentially large binary files out of my source code repositories.
+
+The files in this repository are licensed under CC [[http://creativecommons.org/licenses/by-nc-sa/4.0/][Attribution-NonCommercial-ShareAlike 4.0 International]]
