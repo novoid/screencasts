@@ -24,7 +24,7 @@ find "$SEARCH_DIR" \
         continue
     fi
 
-    cp "$readme" "${readme}.bak"
+    # cp "$readme" "${readme}.bak"
     tmpfile=$(mktemp)
     cp "$readme" "$tmpfile"
 
